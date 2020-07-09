@@ -9,4 +9,8 @@ var wb = {
     black: "#000000"
 };
 
-var colors = Object.assign(rgb, wb);
+// Adding an empty object as target we can preserve the values
+// of rgb and wb
+var colors = Object.assign({}, rgb, wb);
+
+console.log(colors);
