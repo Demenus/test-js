@@ -1,5 +1,10 @@
-for (var i = 0; i < 5; i++) {
-    setTimeout(function () {
+// Using let we will get block scoped i
+for (let i = 0; i < 5; i++) {
+    // Using an arrow function we are able to
+    // get the scoped i
+    setTimeout(() => {
         console.log(i);
-    }, 1000)
+    // Using i * 1000 will allow us to wait
+    // for i  seconds
+    }, i * 1000)
 }
